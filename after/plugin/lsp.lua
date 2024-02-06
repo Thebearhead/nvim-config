@@ -6,9 +6,27 @@ end)
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
-  ensure_installed = {},
+  ensure_installed = {
+      "pyright",
+      "tsserver",
+      "eslint",
+      "html",
+      "lua_ls",
+  },
   handlers = {
     lsp_zero.default_setup,
+    lua_ls = function ()
+        local lspconfig = require("lspconfig")
+        lspconfig.lua_ls.setup{
+            settings = {
+                Lua = {
+                    diagnostics = {
+                        globals = { "vim" }
+                    }
+                }
+            }
+        }
+    end
   },
 })
 
