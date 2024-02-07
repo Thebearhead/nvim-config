@@ -2,6 +2,10 @@ local lsp_zero = require("lsp-zero")
 
 lsp_zero.on_attach(function(client, bufnr)
   lsp_zero.default_keymaps({buffer = bufnr})
+  local opts = {buffer = bufnr, remap = false}
+
+  vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
+
 end)
 
 require('mason').setup({})
@@ -33,6 +37,10 @@ require('mason-lspconfig').setup({
 local cmp = require('cmp')
 local cmp_action = require('lsp-zero').cmp_action()
 
+require("luasnip.loaders.from_vscode").lazy_load()
+require("luasnip.loaders.from_lua").lazy_load({paths = "./luasnippets"})
+
+
 cmp.setup({
   mapping = cmp.mapping.preset.insert({
     -- `Enter` key to confirm completion
@@ -48,5 +56,16 @@ cmp.setup({
     -- Scroll up and down in the completion documentation
     ['<C-u>'] = cmp.mapping.scroll_docs(-4),
     ['<C-d>'] = cmp.mapping.scroll_docs(4),
+  }),
+  snippet = {
+      expand = function(args)
+          require("luasnip").lsp_expand(args.body)
+      end,
+  },
+  sources = cmp.config.sources({
+      { name = "nvim_lsp" },
+      { name = "luasnip" },
+  }, {
+      { name = "buffer" },
   })
 })

@@ -17,6 +17,10 @@ require("lazy").setup({
 		-- or                              , branch = '0.1.x',
 		dependencies = { 'nvim-lua/plenary.nvim' }
 	},
+    {
+        'nvim-lualine/lualine.nvim',
+        dependencies = { 'nvim-tree/nvim-web-devicons' }
+    },
 	{ "rose-pine/neovim", name = "rose-pine" },
 	{ "nvim-treesitter/nvim-treesitter", name = "treesitter"},
 	{ "theprimeagen/harpoon" , name = "harpoon"},
@@ -29,4 +33,6 @@ require("lazy").setup({
 	{'L3MON4D3/LuaSnip'},
 	{'williamboman/mason.nvim'},
 	{'williamboman/mason-lspconfig.nvim'},
+	{'saadparwaiz1/cmp_luasnip'},
+	{'rafamadriz/friendly-snippets'},
 }, opts)
