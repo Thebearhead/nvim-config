@@ -18,7 +18,7 @@ end
 
 vim.opt.undodir = home .. "/.nvim/undodir"
 
-vim.opt.hlsearch = false
+vim.opt.hlsearch = true
 vim.opt.incsearch = false
 
 vim.opt.termguicolors = true
@@ -48,3 +48,5 @@ end
 vim.keymap.set("n", "<leader>rn" , function()
     vim_opt_toggle("relativenumber", true, false, "Relative line numbers")
 end)
+
+vim.opt.shell = 'powershell.exe'
