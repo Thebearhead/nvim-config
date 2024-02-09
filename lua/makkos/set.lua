@@ -29,6 +29,8 @@ vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 5
 
+vim.opt.showtabline = 2
+
 ----------------------
 ----------------------
 ----------------------
