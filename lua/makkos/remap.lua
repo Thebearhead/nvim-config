@@ -9,5 +9,6 @@ vim.keymap.set("n", "<C-k>", ":m-2<CR>", { silent = true})
 vim.keymap.set("v", "<C-j>", ":m '>+1<CR>gv=gv", { silent = true})
 vim.keymap.set("v", "<C-k>", ":m '<-2<CR>gv=gv", { silent = true})
 
--- :tnoremap <Esc> <C-\><C-n>
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
+
+vim.keymap.set("n", "<leader>bs", "<C-V>")
