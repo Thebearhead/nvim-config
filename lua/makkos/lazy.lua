@@ -21,9 +21,13 @@ require("lazy").setup({
         'nvim-lualine/lualine.nvim',
         dependencies = { 'nvim-tree/nvim-web-devicons' }
     },
+    {
+        "ThePrimeagen/harpoon",
+        branch = "harpoon2",
+        dependencies = { "nvim-lua/plenary.nvim" }
+    },
 	{ "rose-pine/neovim", name = "rose-pine" },
 	{ "nvim-treesitter/nvim-treesitter", name = "treesitter"},
-	{ "theprimeagen/harpoon" , name = "harpoon"},
 	{ "mbbill/undotree" , name = "undotree"},
 	{ "tpope/vim-fugitive" , name = "vim-fugitive"},
 	{'VonHeikemen/lsp-zero.nvim', branch = 'v3.x'},
