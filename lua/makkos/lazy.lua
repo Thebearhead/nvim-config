@@ -34,6 +34,13 @@ require("lazy").setup({
             vim.o.timeoutlen = 300
         end,
     },
+    {
+        "epwalsh/obsidian.nvim",
+        version = "*",
+        lazy = true,
+        ft = "markdown",
+        dependencies = { "nvim-lua/plenary.nvim" },
+    },
 	{ "rose-pine/neovim", name = "rose-pine" },
 	{ "nvim-treesitter/nvim-treesitter", name = "treesitter"},
 	{ "mbbill/undotree" , name = "undotree"},
