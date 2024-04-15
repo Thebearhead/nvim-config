@@ -22,3 +22,9 @@ vim.keymap.set("x", "<leader>bs", "<C-V>")
 
 -- Tabs
 vim.keymap.set("n", "<leader>nt", vim.cmd.tabnew)
+
+-- Add Esc option
+vim.keymap.set("i", "jj", "<Esc>")
+
+-- Remap gr to telescope
+vim.keymap.set("n", "<leader>gr", "<Cmd>Telescope lsp_references<CR>")

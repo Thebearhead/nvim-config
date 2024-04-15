@@ -8,6 +8,10 @@ require("obsidian").setup({
             name = "Unique",
             path = "~/Obsidian/Unique"
         },
+        {
+            name = "Old",
+            path = "~/Obsidian/OldVault"
+        },
     },
 
     notes_subdir = "notes",
