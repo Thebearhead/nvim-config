@@ -15,6 +15,7 @@
   "obsidian.nvim": { "branch": "main", "commit": "387f5cf90718b729e1e855e66dd272039395a6dc" },
   "plenary.nvim": { "branch": "master", "commit": "4f71c0c4a196ceb656c824a70792f3df3ce6bb6d" },
   "rose-pine": { "branch": "main", "commit": "f01ce3a71748a92997d266cfe2c985decd18c601" },
+  "smart-splits.nvim": { "branch": "master", "commit": "95d11bfc83263236431ead7dc017f5ab0ff992ca" },
   "telescope.nvim": { "branch": "master", "commit": "d90956833d7c27e73c621a61f20b29fdb7122709" },
   "treesitter": { "branch": "master", "commit": "10d79b5dbbdffc3edf307b189284fb62e2e79a3e" },
   "undotree": { "branch": "master", "commit": "9dbbf3b7d19dda0d22ceca461818e4739ad8154d" },

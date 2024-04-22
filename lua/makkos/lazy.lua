@@ -54,4 +54,5 @@ require("lazy").setup({
 	{'williamboman/mason-lspconfig.nvim'},
 	{'saadparwaiz1/cmp_luasnip'},
 	{'rafamadriz/friendly-snippets'},
+    { 'mrjones2014/smart-splits.nvim', lazy = false},
 }, opts)
