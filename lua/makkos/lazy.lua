@@ -34,13 +34,14 @@ require("lazy").setup({
             vim.o.timeoutlen = 300
         end,
     },
-    {
-        "epwalsh/obsidian.nvim",
-        version = "*",
-        lazy = true,
-        ft = "markdown",
-        dependencies = { "nvim-lua/plenary.nvim" },
-    },
+   --{
+   --    "epwalsh/obsidian.nvim",
+   --    version = "*",
+   --    lazy = true,
+   --    ft = "markdown",
+   --    dependencies = { "nvim-lua/plenary.nvim" },
+   --},
+    { 'mrjones2014/smart-splits.nvim' },
 	{ "rose-pine/neovim", name = "rose-pine" },
 	{ "nvim-treesitter/nvim-treesitter", name = "treesitter"},
 	{ "mbbill/undotree" , name = "undotree"},
