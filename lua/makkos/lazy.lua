@@ -55,5 +55,7 @@ require("lazy").setup({
 	{'williamboman/mason-lspconfig.nvim'},
 	{'saadparwaiz1/cmp_luasnip'},
 	{'rafamadriz/friendly-snippets'},
+    { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
+    { 'ziglang/zig.vim' },
     { 'mrjones2014/smart-splits.nvim', lazy = false},
 }, opts)
