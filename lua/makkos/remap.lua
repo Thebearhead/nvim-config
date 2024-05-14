@@ -1,7 +1,8 @@
 vim.g.mapleader = " "
 
 -- Open finder
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+-- vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+vim.keymap.set("n", "<leader>pv", ":Neotree dir=%:p:h<CR>")
 
 -- Clear Search highlights
 vim.keymap.set("n", "<leader>cs", vim.cmd.noh)

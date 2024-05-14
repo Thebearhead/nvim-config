@@ -1,0 +1,37 @@
+-- -- You don't need to set any of these options.
+-- -- IMPORTANT!: this is only a showcase of how you can set default options!
+-- require("telescope").setup {
+--     extensions = {
+--         file_browser = {
+--             picker = {
+--                 cwd_to_path = true,
+--                 current_buffer_fuzzy_find = {
+--                     previewer = false,
+--                 },
+--             },
+--             hijack_netrw = true,
+--         },
+--     },
+--     pickers = {
+--     }
+-- }
+-- 
+-- -- local fb = require("telescope").extensions.file_browser.picker
+-- -- fb.file_browser({
+-- --     cwd_to_path = true
+-- -- })
+-- 
+-- -- To get telescope-file-browser loaded and working with telescope,
+-- -- you need to call load_extension, somewhere after setup function:
+-- require("telescope").load_extension "file_browser"
+-- 
+-- -- vim.keymap.set("n", "<leader>pv", ":Telescope file_browser path=%:p:h select_buffer=true<CR>")
+-- 
+-- 
+-- vim.keymap.set("n", "<leader>pv", function()
+-- 	require("telescope").extensions.file_browser.file_browser({
+--         picker = {
+--             cwd_to_path = true
+--         }
+--     })
+-- end)

@@ -34,6 +34,16 @@ require("lazy").setup({
             vim.o.timeoutlen = 300
         end,
     },
+    {
+        "nvim-neo-tree/neo-tree.nvim",
+        branch = "v3.x",
+        dependencies = {
+            "nvim-lua/plenary.nvim",
+            "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+            "MunifTanjim/nui.nvim",
+            -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
+        }
+    },
    --{
    --    "epwalsh/obsidian.nvim",
    --    version = "*",
@@ -57,5 +67,6 @@ require("lazy").setup({
 	{'rafamadriz/friendly-snippets'},
     { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
     { 'ziglang/zig.vim' },
+    -- { 'nvim-telescope/telescope-file-browser.nvim', dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }},
     { 'mrjones2014/smart-splits.nvim', lazy = false},
 }, opts)
