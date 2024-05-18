@@ -47,3 +47,4 @@ vim.keymap.set("n", "<A-v>", "<C-w>v")
 -- REMPAS FOR SMART-SPLITS
 --
 
+vim.keymap.set("i", "<C-H>", "<C-w>")
