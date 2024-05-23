@@ -44,13 +44,13 @@ require("lazy").setup({
             -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
         }
     },
-   --{
-   --    "epwalsh/obsidian.nvim",
-   --    version = "*",
-   --    lazy = true,
-   --    ft = "markdown",
-   --    dependencies = { "nvim-lua/plenary.nvim" },
-   --},
+   {
+       "epwalsh/obsidian.nvim",
+       version = "*",
+       lazy = true,
+       ft = "markdown",
+       dependencies = { "nvim-lua/plenary.nvim" },
+   },
     { 'mrjones2014/smart-splits.nvim' },
 	{ "rose-pine/neovim", name = "rose-pine" },
 	{ "nvim-treesitter/nvim-treesitter", name = "treesitter"},
