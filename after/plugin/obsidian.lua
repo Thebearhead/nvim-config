@@ -39,6 +39,7 @@ require("obsidian").setup({
         -- Toggle check-boxes.
         ["<leader>ch"] = {
             action = function()
+                print("Hello!")
                 return require("obsidian").util.toggle_checkbox()
             end,
             opts = { buffer = true },

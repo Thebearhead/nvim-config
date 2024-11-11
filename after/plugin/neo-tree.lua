@@ -1,8 +1,14 @@
 vim.keymap.set("n", "<leader>pg", "<Cmd>Neotree git_status<CR>")
 require("neo-tree").setup({
     window = {
-        position = "current",
+        position = "float",
         width = 20,
+        popup = {
+            size = {
+                height = "80%",
+                width = "80%"
+            }
+        },
         mappings = {
             ["<Esc>"] = "close_window",
             ["ga"] = "git_add_file"
@@ -10,6 +16,10 @@ require("neo-tree").setup({
     },
     filesystem = {
         hijack_netrw_behavior = "open_default",
+        bind_to_cwd = false,
+    },
+    buffers = {
+        bind_to_cwd = true
     },
     git_status = {
         window = {

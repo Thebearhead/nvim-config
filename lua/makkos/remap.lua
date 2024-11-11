@@ -48,3 +48,7 @@ vim.keymap.set("n", "<A-v>", "<C-w>v")
 --
 
 vim.keymap.set("i", "<C-H>", "<C-w>")
+
+vim.keymap.set("n", "<leader>cp", function ()
+    vim.cmd(":0")
+end)
