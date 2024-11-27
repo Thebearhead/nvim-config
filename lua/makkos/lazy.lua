@@ -44,6 +44,11 @@ require("lazy").setup({
             -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
         }
     },
+    {
+        "kylechui/nvim-surround",
+        version = "*", -- Use for stability; omit to use `main` branch for the latest features
+        --event = "VeryLazy"
+    },
    {
        "epwalsh/obsidian.nvim",
        version = "*",
@@ -67,6 +72,6 @@ require("lazy").setup({
 	{'rafamadriz/friendly-snippets'},
     { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
     { 'ziglang/zig.vim' },
-    -- { 'nvim-telescope/telescope-file-browser.nvim', dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }},
+    { 'nvim-telescope/telescope-file-browser.nvim', dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }},
     { 'mrjones2014/smart-splits.nvim', lazy = false},
 }, opts)
